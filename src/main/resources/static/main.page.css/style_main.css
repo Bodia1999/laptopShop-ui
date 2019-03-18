@@ -1,0 +1,488 @@
+body {
+
+  font-family: 'Raleway', 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.logo{
+
+  background: black;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+
+}
+.graphic-logo{
+  margin: 0;
+  width: 55%;
+  display: flex;
+  justify-content:flex-end;
+  box-sizing: border-box;
+}
+
+.logotype {
+
+  padding: 5px ;
+  max-width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+}
+
+.info {
+  padding: 23px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav{
+  margin:auto;
+  width: 800px;
+  height: 100px;
+
+
+}
+.topnav {
+  background-color: white;
+  font-size: 15px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+
+
+}
+
+.topnav a{
+  color: black;
+  text-align: center;
+  padding: 14px 13px;
+  font-size: 15px;
+  text-decoration: none;
+
+}
+
+.topnav a:hover{
+  border-bottom: 2px solid black;
+}
+.topnav .icon{
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .topnav a:not(:first-child){
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    margin: -17px;
+    display: block;
+    color: black;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 30px;
+  }
+  nav{
+    width: 100%;
+    height: 100px;
+
+  }
+  .topnav.responsive{
+    position: relative;
+  }
+
+  .topnav.responsive a.icon{
+    position: absolute;
+    right: 0;
+    top: 0;
+
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+.container-footer{
+  padding: 0 10px 0 0;
+  margin: 50px 0 0 0;
+  background: black;
+  height: 300px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 300px 8px 300px;
+  font-size: 14px;
+  box-sizing: border-box;
+
+
+}
+
+.social_networkings {
+  padding: 0;
+  margin: 0;
+  max-height: 250px;
+  display: flex;
+  align-items: flex-end;
+}
+@media screen and (max-width: 600px){
+  .container-footer{
+    padding: 8px;
+  }
+  .social_networkings{
+    display: none;
+  }
+
+  .footer_second_column {
+    display: none;
+  }
+  .footer_third_column {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .container-footer{
+    padding: 8px;
+  }
+  .footer_third_column {
+    display: none;
+  }
+  .social_networkings{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 950px){
+  .container-footer{
+    padding: 8px;
+  }
+}
+
+@media screen and (min-width:75%){
+  .container-footer{
+    padding: 8px 300px 8px 300px;
+  }
+}
+footer{
+
+  display: block;
+  margin: 0;
+  padding-top: 40px;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
+}
+.container-footer ul, li{
+  text-decoration: none;
+  list-style: none;
+  text-decoration: none;
+  color: white;
+}
+h1 {
+  font-size: 18px;
+  font-weight: bold;
+}
+.footer_main_column ol{
+  padding: 0;
+}
+.footer_first_column {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
+  min-width: 130px;
+}
+.footer_first_column ol{
+  padding: 0;
+}
+.footer_second_column {
+  min-width: 130px;
+  text-decoration: none;
+  list-style: none;
+  text-decoration: none;
+  color: white;
+}
+.footer_second_column ol{
+  padding: 0;
+}
+.footer_third_column {
+  min-width: 150px;
+  text-decoration: none;
+  list-style: none;
+  text-decoration: none;
+  color: white;
+}
+
+.footer_third_column ol{
+  padding: 0;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+.footer-columns{
+  color: white;
+}
+
+p{
+  font-size: 20px;
+  font-style: oblique;
+  font-family:inherit;
+  font-weight: bold;
+
+}
+
+.processor-name{
+  color: grey;
+}
+
+/*
+ul{
+  display: flex;
+  justify-content: flex-end;
+}
+*/
+.product-image{
+  position: relative;
+  height: 200px;
+  max-width: 344px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.product {
+
+  width: 33%;
+  max-height: 400px;
+}
+.product li{
+  color: black;
+}
+
+.container{
+  min-width: 35%;
+  max-width: 45%;
+  min-height: 1800px;
+}
+
+.filter{
+  height: 2280px;
+  padding: 0 20px 0 0;
+  width: 22%;
+
+}
+.main-all-page{
+  max-width: 68%;
+  display: flex;
+  justify-content: center;
+}
+
+.page{
+  display: flex;
+  justify-content: center;
+  font-family: 'Raleway','Arial',sans-serif;
+
+}
+
+.priceFrom, .priceTo{
+  width: 75px;
+}
+
+.price-title, .make-title{
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.make-title{
+  margin-top: 10px;
+}
+.checkbox-container {
+  font-family: 'Raleway', 'Arial', sans-serif;
+  display: block;
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 4px;
+  cursor: pointer;
+  font-size: 15px;
+  font-family: serif;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+}
+
+/* Hide the browser's default checkbox */
+.checkbox-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: -1px;
+  left: 0;
+  height: 18px;
+  width: 18px;
+  /*  background-color: #e8eaed;*/
+  background-color: black;
+}
+
+/* On mouse-over, add a grey background color */
+.checkbox-container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.checkbox-container input:checked ~ .checkmark {
+  background-color: black;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.checkbox-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkbox-container .checkmark:after {
+  left: 5px;
+  top: 1px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+#price-submit-button{
+  background-color: black;
+  padding: .5em;
+  /*  -moz-border-radius: 5px;*/
+  /*  -webkit-border-radius: 5px;*/
+  /*  border-radius: 6px;*/
+  color: #fff;
+  height: 20px;
+  font-family: 'Raleway';
+  font-size: 10px;
+  text-decoration: none;
+  border: none;
+}
+.filter-buttons {
+  background-color: black;
+  padding: .5em;
+  /*  -moz-border-radius: 5px;*/
+  /*  -webkit-border-radius: 5px;*/
+  /*  border-radius: 6px;*/
+  color: #fff;
+  height: 23px;
+  width: 115px;
+  font-family: 'Raleway';
+  font-size: 12px;
+  text-decoration: none;
+  border: none;
+}
+#price-submit-button:hover{
+  border: none;
+  background: #d8d8d8;
+  color: black;
+  font-weight: bolder;
+  box-shadow: 0px 0px 1px #777;
+}
+.filter-buttons:hover {
+  border: none;
+  background: #d8d8d8;
+  color: black;
+  font-weight: bolder;
+  box-shadow: 0px 0px 1px #777;
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+/*
+.listing-item__img-container{
+  max-height: 300px;
+  max-width: 437px;
+}*/
+
+@media screen and (max-width: 1280px){
+  .product {
+
+    width: 49%;
+  }
+}
+@media screen and (max-width: 850px){
+  .product {
+    min-width: 180px;
+    width: 49%;
+  }
+  .filter{
+    display: none;
+  }
+  .container{
+    max-width: 80%;
+  }
+}
+
+@media screen and (max-width: 750px){
+
+  /*
+    .filter{
+      display: none;
+    }
+  */
+
+  .product {
+
+    min-width: 180px;
+    width: 55%;
+  }
+
+  /*
+    .container{
+      max-width: 45%;
+    }
+  */
+
+}
+
+
+
+.list-short-description{
+  padding: 0;
+}
+
+

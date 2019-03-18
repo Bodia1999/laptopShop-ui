@@ -1,0 +1,47 @@
+
+.under_photo{
+  margin: 10px;
+  width: 1200px;
+  height: 60px;
+  box-sizing: border-box;
+  background-color: black;
+  /*background-image: linear-gradient( black,#ffffff);*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.main_image img{
+  width: auto;
+  box-sizing: border-box;
+  display: block;
+  max-width: 100%;
+  height: auto;
+  padding-bottom: 10px;
+}
+.main{
+  
+  display: flex;
+  justify-content: center;
+}
+
+.inside_main_div {
+   max-width: 200px;
+  background-image: radial-gradient(black, #0c0000);
+}
+
+@media screen and (max-width: 1300px){
+  .main_photo{
+    padding: 0 10px 0 10px;
+  }
+}.main{
+  
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 25px;
+}
+

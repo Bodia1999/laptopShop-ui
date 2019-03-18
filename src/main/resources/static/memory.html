@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bear(Admin-Make)</title>
+    <link rel="stylesheet" href="css/memory.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+<div>
+ <header>
+   <div class="logo">
+    <a href="main.html"><img class="logotype" src="photo/FINAL_VERSION.png" alt="logo"></a>
+
+   </div>
+ </header>
+  
+</div>
+<div class="createMemoryButton">
+  
+<button id="openModal">Create memory</button>
+</div>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+        <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2>Create memory</h2>
+        </div>
+        <div class="modal-body">
+            <div>
+                <form>
+                    <label for="name">Name</label><br>
+                    <input type="text" id="name" name="name" placeholder="Your memory name.."><br>
+                    <label for="typeOfMemory">Type of memory</label><br>
+                    <input type="text" id="typeOfMemory" name="typeOfMemory" placeholder="Your type of memory.."><br>
+                    <label for="volumeOfMemory">Volume of memory</label><br>
+                    <input min="0" type="number" id="volumeOfMemory" name="volumeOfMemory" placeholder="Your volume of memory.."><br>
+                    <input type="button" id="btnCreateMemory" value="Create">
+                    <input type="button" id="btnUpdateMemory" value="Update">
+                </form>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <h3>Form for new memory</h3>
+        </div>
+    </div>
+
+</div>
+    
+
+
+
+<table id="memories">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Type of memory</th>
+        <th>Volume of memory</th>
+        <th>Delete Button</th>
+        <th>Update Button</th>
+    </tr>
+</table>
+
+<script src="script/memory.js" ></script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bear(Admin-Make)</title>
+    <link rel="stylesheet" href="css/make.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+<div>
+ <header>
+   <div class="logo">
+    <a href="main.html"><img class="logotype" src="photo/FINAL_VERSION.png" alt="logo"></a>
+
+   </div>
+ </header>
+  
+</div>
+<div class="createMakeButton div">
+  
+<button id="openModal">Create make</button>
+</div>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+        <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2>Create make</h2>
+        </div>
+        <div class="modal-body">
+            <div>
+                <form>
+                    <label for="name">Name</label><br>
+                    <input type="text" id="name" name="fname" placeholder="Your make name.."><br>
+                    <input type="button" id="btnCreateMake" value="Create">
+                    <input type="button" id="btnUpdateMake" value="Update">
+                </form>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <h3>Form for new make</h3>
+        </div>
+    </div>
+
+</div>
+    
+
+
+
+<table id="makes">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Delete Button</th>
+        <th>Update Button</th>
+    </tr>
+</table>
+
+<script src="script/make.js" ></script>
+</body>
+</html>

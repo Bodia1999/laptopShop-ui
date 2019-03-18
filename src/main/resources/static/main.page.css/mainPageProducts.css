@@ -1,0 +1,68 @@
+a{
+  text-decoration: none;
+  color: black;
+}
+
+p{
+  font-size: 20px;
+  font-style: oblique;
+  font-family:inherit;
+  font-weight: bold;
+  
+}
+
+.processor-name{
+  color: grey;
+}
+
+/*
+ul{
+  display: flex;
+  justify-content: flex-end;
+}
+*/
+.product-image{
+  position: relative;
+height: 200px;
+  max-width: 290px;
+  
+/*  background-image: url(../img/macbook.jpg);*/
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: 100%;
+     overflow: hidden;
+}
+
+.container {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+   }
+   
+   .product {
+     
+     width: 32%;
+   }
+
+.container{
+  min-width: 35%;
+  max-width: 45%;
+}
+/*
+.listing-item__img-container{
+  max-height: 300px;
+  max-width: 437px;
+}*/
+
+@media screen and (max-width: 1280px){
+  .product {
+     
+     width: 49%;
+   }
+}
+@media screen and (max-width: 850px){
+.product {
+     
+     width: 99%;
+   }
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bear(Admin-Corps)</title>
+    <link rel="stylesheet" href="css/corps.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+<div>
+ <header>
+   <div class="logo">
+    <a href="main.html"><img class="logotype" src="photo/FINAL_VERSION.png" alt="logo"></a>
+
+   </div>
+ </header>
+  
+</div>
+<div class="createCorpsButton">
+  
+<button id="openModal">Create corps</button>
+</div>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+        <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2>Create corps</h2>
+        </div>
+        <div class="modal-body">
+            <div>
+                <form>
+                    <label for="materialOfCorps">Material</label><br>
+                    <input type="text" id="materialOfCorps" name="materialOfCorps" placeholder="Your material .."><br>
+                    <label for="colorOfCorps">Color</label><br>
+                    <input type="text" id="colorOfCorps" name="colorOfCorps" placeholder="Your color .."><br>
+                    <label for="dimensions">Dimensions</label><br>
+                    <input type="text" id="dimensions" name="dimensions" placeholder="Your dimensions .."><br>
+                    <label for="weight">Weight</label><br>
+                    <input type="text" id="weight" name="weight" placeholder="Your weight .."><br>
+                    <input type="button" id="btnCreateCorps" value="Create">
+                    <input type="button" id="btnUpdateCorps" value="Update">
+                </form>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <h3>Form for new corps</h3>
+        </div>
+    </div>
+
+</div>
+    
+
+
+
+<table id="corps">
+    <tr>
+        <th>ID</th>
+        <th>Color</th>
+        <th>Material</th>
+        <th>Dimensions</th>
+        <th>Weight</th>
+        <th>Delete Button</th>
+        <th>Update Button</th>
+    </tr>
+</table>
+
+<script src="script/corps.js" ></script>
+
+
+</body>
+</html>

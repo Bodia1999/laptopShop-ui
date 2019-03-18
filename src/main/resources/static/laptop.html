@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bear(Admin-Laptop)</title>
+    <link rel="stylesheet" href="css/laptop.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+<div>
+ <header>
+   <div class="logo">
+    <a href="main.html"><img class="logotype" src="photo/FINAL_VERSION.png" alt="logo"></a>
+
+   </div>
+ </header>
+  
+</div>
+<div class="createLaptopButton">
+<button id="openModal">Create Laptop</button>
+</div>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+        <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2>Create Laptop</h2>
+        </div>
+        <div class="modal-body">
+                <form>
+            <div class="contentOfForm">
+                   <div class="first-content">
+                    <label for="model">Model</label><br>
+                    <input type="text" id="model" name="model" placeholder="Your model name.."><br>
+                    <label for="model">Make ID</label><br>
+                    <input type="number" min="0" id="makeId" name="makeId" placeholder="Your make ID.."><br>
+                    <label for="makeId">Graphic card ID</label><br>
+                    <input type="number" min="0" id="graphicCardId" name="graphicCardId" placeholder="Your graphic Card ID.."><br>
+                    <label for="model">Ram ID</label><br>
+                    <input type="number" min="0" id="ramId" name="ramId" placeholder="Your ram ID.."><br>
+                    <label for="corpsId">Corps ID</label><br>
+                    <input type="number" min="0" id="corpsId" name="corpsId" placeholder="Your corps ID.."><br>
+                    <label for="memoryId">Memory ID</label><br>
+                    <input type="number" min="0" id="memoryId" name="memoryId" placeholder="Your Memory ID.."><br>
+                    <label for="processorId">Processor ID</label><br>
+                    <input type="number" min="0" id="processorId" name="processorId" placeholder="Your Processor ID.."><br>
+                    <label for="screenId">Screen ID</label><br>
+                    <input type="number" min="0" id="screenId" name="screenId" placeholder="Your Screen ID.."><br></div>
+                    
+                    <div class="second-content">
+                      <form>
+                        <label for="availabilityOfWIFITrue">WI-FI</label><br>
+                          <input type="radio" id="availabilityOfWIFITrue" name="availabilityOfWIFI" value="true" >Available<br>
+                          <input type="radio" id="availabilityOfWIFIFalse" name="availabilityOfWIFI" value="false"checked>Not available<br>
+                      </form>
+                       <form>
+                        <label for="availabilityOfBluetooth">Bluetooth</label><br>
+                          <input type="radio" id="availabilityOfBluetooth" name="availabilityOfBluetooth" value="true" >Available<br>
+                          <input type="radio" name="availabilityOfBluetooth" value="false"checked>Not available<br>
+                      </form>
+                       <form>
+                        <label for="availabilityOfUSBTypeC">USB Type-C</label><br>
+                          <input type="radio" id="availabilityOfUSBTypeC" name="availabilityOfTypeC" value="true" >Available<br>
+                          <input type="radio" name="availabilityOfTypeC" value="false"checked>Not available<br>
+                      </form>
+                       <form>
+                        <label for="availabilityOfUSBSecondGeneration">USB 2.0</label><br>
+                          <input type="radio" id="availabilityOfUSBSecondGeneration" name="availabilityOfUSBSecondGeneration" value="true" >Available<br>
+                          <input type="radio" name="availabilityOfUSBSecondGeneration" value="false"checked>Not available<br>
+                      </form>
+                       <form>
+                        <label for="availabilityOfUSBThirdGeneration">USB 3.0</label><br>
+                          <input type="radio" id="availabilityOfUSBThirdGeneration" name="availabilityOfUSBThirdGeneration" value="true" >Available<br>
+                          <input type="radio"  name="availabilityOfUSBThirdGeneration" value="false"checked>Not available<br>
+                      </form>
+                       <form>
+                        <label for="availabilityOfHDMI">HDMI</label><br>
+                          <input type="radio" id="availabilityOfHDMI" name="availabilityOfHDMI" value="true" >Available<br>
+                          <input type="radio" name="availabilityOfHDMI" value="false"checked>Not available<br>
+                      </form>
+                       <form>
+                        <label for="availabilityOfLAN">LAN</label><br>
+                          <input type="radio" id="availabilityOfLAN" name="availabilityOfLAN" value="true" >Available<br>
+                          <input type="radio" name="availabilityOfLAN" value="false"checked>Not available<br>
+                      </form>
+                       <form>
+                        <label for="availabilityOfAUX">AUX</label><br>
+                          <input type="radio" id="availabilityOfAUX" name="availabilityOfAUX" value="true" >Available<br>
+                          <input type="radio" name="availabilityOfAUX" value="false"checked>Not available<br>
+                      </form>
+                        <form>
+                        <label for="imageDirection">Upload photo</label><br>
+                            <input type="file" id="imageDirection"><br>
+                            <input type="button" value="Send" id="sendFile"><br>
+                      </form>
+                    </div>
+            </div>
+                    <form>
+                        <input type="button" id="btnCreateLaptop" value="Create">
+                        <input type="button" id="btnUpdateLaptop" value="Update">
+                    </form>
+                </form>
+        </div>
+        <div class="modal-footer">
+            <h3>Form for new Laptop</h3>
+        </div>
+    </div>
+
+</div>
+
+
+
+<table id="laptops">
+    <tr>
+        <th>ID</th>
+        <th>Model</th>
+        <th>Make ID</th>
+        <th>Graphic card ID</th>
+        <th>Ram ID</th>
+        <th>Corps ID</th>
+        <th>Memory ID</th>
+        <th>Processor ID</th>
+        <th>Screen ID</th>
+        <th>WI-FI</th>
+        <th>Bluetooth</th>
+        <th>USB Type-C</th>
+        <th>USB 2.0</th>
+        <th>USB 3.0</th>
+        <th>HDMI</th>
+        <th>LAN</th>
+        <th>AUX</th>
+        <th class="photo">Upload Photo</th>
+        <th>Delete Button</th>
+        <th>Update Button</th>
+    </tr>
+</table>
+
+<script src="script/laptop1.js" ></script>
+</body>
+</html>

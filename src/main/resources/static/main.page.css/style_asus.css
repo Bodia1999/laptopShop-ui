@@ -1,0 +1,38 @@
+.under_photo{
+  margin: 10px;
+  width: 1200px;
+  height: 60px;
+  box-sizing: border-box;
+  background-color: black;
+  background-image: linear-gradient( black,#0b110f);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.main_photo img{
+  width: auto;
+  box-sizing: border-box;
+  display: block;
+  max-width: 100%;
+  height: auto;
+  padding-bottom: 10px;
+}
+.main{
+  
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  color:white;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+@media screen and (max-width: 1300px){
+  .main_photo{
+    padding: 0 10px 0 10px;
+  }
+}
+
