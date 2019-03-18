@@ -1,6 +1,5 @@
 package bohdan.papizhanskiy.laptops.repository;
 
-import bohdan.papizhanskiy.laptops.entity.Corps;
 import bohdan.papizhanskiy.laptops.entity.GraphicCard;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.JpaSpecificationExecutor;

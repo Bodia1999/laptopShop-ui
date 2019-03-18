@@ -1,6 +1,6 @@
 package bohdan.papizhanskiy.laptops.dto.request;
 
-import javafx.scene.control.Pagination;
+
 import lombok.Getter;
 import lombok.Setter;
 

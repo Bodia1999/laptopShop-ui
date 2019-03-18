@@ -1,13 +1,8 @@
 package bohdan.papizhanskiy.laptops.dto.request;
 
-import bohdan.papizhanskiy.laptops.entity.Laptop;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-
-import javax.validation.constraints.Min;
-import javax.validation.constraints.NotEmpty;
-import javax.validation.constraints.NotNull;
 
 @Getter
 @Setter

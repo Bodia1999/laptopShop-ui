@@ -1,7 +1,7 @@
 package bohdan.papizhanskiy.laptops.repository;
 
 import bohdan.papizhanskiy.laptops.entity.Laptop;
-import javafx.scene.control.Pagination;
+
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
